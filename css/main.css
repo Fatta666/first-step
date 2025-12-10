@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+:root {
+  --main-white: #ffffff;
+  --main-grey: #ccc;
+  --text-brand: rgb(204, 28, 28);
+  --text-hover: #e2f10e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wraper {
+  background: linear-gradient(
+    90180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 150px;
+  gap: 30px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20%;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--main-white);
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--text-brand);
+  text-shadow: 0 0 15px var(--text-brand), 0 0 30px var(--text-brand);
+  transform: scale(1.05);
+}
+
+.nav {
+  width: 50%;
+  padding-right: 20%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: var(--main-white);
+  gap: 10px;
+  font-size: 20px;
+}
+
+.nav-list a {
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: var(--text-brand);
+}
+
+/* Hero section */
+
+.hero-section {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(/img/bg_space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding-top: 200px;
+}
+
+.hero-title {
+  text-align: center;
+  color: var(--main-white);
+  font-size: 150px;
+  margin-bottom: 50px;
+}
+
+.hero-text {
+  margin: 0 auto;
+  max-width: 70%;
+  text-align: justify;
+  color: var(--main-white);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+
+.hero-title-word {
+  display: inline;
+  color: var(--text-brand);
+  text-shadow: 2px 2px 5px black;
+}
+
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  padding: 20;
+  border-radius: 20px;
+  color: var(--main-white);
+  transition: 0.2s linear;
+  background: #f56607;
+  font-size: 40px;
+  padding: 20px 150px;
+}
+
+.hero-button:hover {
+  box-shadow: #d62506 0 0px 0px 50px inset;
+  color: var(--text-hover);
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #00d4ff;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-footer {
+  flex: 1;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.footer-nav .logo {
+  flex: 1;
+  justify-content: flex-start;
+  padding: 0;
+  width: auto;
+}
+
+.nav-list-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  color: var(--main-white);
+  gap: 20px;
+  font-size: 20px;
+}
+
+.nav-list-footer a {
+  transition: color 0.3s;
+}
+
+.nav-list-footer a:hover {
+  color: var(--text-brand);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  align-items: flex-end;
+}
+
+.social-links a {
+  color: var(--main-white);
+  font-size: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #0088cc;
+  transform: scale(1.1);
+}
+
+/* ________________________________________________________________________________ */
+
+img {
+  max-width: 100%;
+}
+
+/* Наши предложения */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+  max-width: 1200px;
+}
+.card {
+  background: #d9d9d9;
+  padding: 25px 70px;
+  border-radius: 20px;
+  display: flex; /* Додайте, якщо його немає, для вертикального вирівнювання */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* Або space-between для відштовхування кнопки */
+}
+
+.id_cards-title {
+  margin-top: 100px;
+}
+
+.card h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+
+.card .price {
+  margin-bottom: 15px; /* Додайте відступ перед кнопкою */
+}
+
+.wrapper {
+  width: 200px;
+  height: 200px;
+  /* Обрізає все, що виходить за межі 180x180 */
+}
+
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ця властивість важлива, щоб зображення заповнювало, не деформуючись */
+}
+
+.buy {
+  padding: 10px 50px;
+  border-radius: 20px;
+  margin-top: 27px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 500ms ease;
+  font-size: 20px;
+}
+
+.buy:hover {
+  transform: scale(1.1);
+}
+
+.info-btn {
+  padding: 15px 60px;
+  border-radius: 20px;
+  border-style: none;
+  color: #fff;
+  background: #ff8c00;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.info-btn:hover {
+  background: #b76500;
+  transform: scale(1.1);
+}
+
+/* О нас */
+.about-section {
+  margin-top: 200px;
+}
+
+.about-section h2 {
+  margin-bottom: 5px;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-text {
+  max-width: 700px;
+  color: #fff;
+  line-height: 40px;
+}
+
+.about-text p:first-child {
+  margin-top: 0; /* Прибираємо верхній відступ першого параграфа */
+}
+
+.about-images {
+  max-width: 250px;
+  height: auto;
+  display: block;
+}
+
+/* Узнать больше новостей */
+.news {
+  margin-top: 150px;
+  margin-bottom: -50px;
+}
+
+.news-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  margin: 50px auto;
+}
+
+.email-input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  flex-grow: 1; /* Робимо поле гнучким, щоб воно займало більшу частину простору */
+  height: 55px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.sub {
+  width: 200px;
+  height: 55px;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 150px;
+  font-size: 20px;
+  transition: background-color 0.1s ease;
+}
+
+.sub:active {
+  background-color: #cc6f00;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 100px;
+}
