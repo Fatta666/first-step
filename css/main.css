@@ -146,6 +146,7 @@ section {
   margin: 0 auto;
   padding: 20;
   border-radius: 20px;
+  border:none;
   color: var(--main-white);
   transition: 0.2s linear;
   background: #f56607;
